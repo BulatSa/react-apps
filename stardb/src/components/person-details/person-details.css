@@ -4,6 +4,10 @@
   padding: 1rem;
 }
 
+.person-details .card-body {
+  padding-top: 0;
+}
+
 .person-details .person-image {
   width: 30%;
   height: 30%;
@@ -12,6 +16,7 @@
 
 .person-details .list-group-item {
   padding: .25rem;
+  background-color: #282828;
 }
 
 .person-details .list-group-item .term{

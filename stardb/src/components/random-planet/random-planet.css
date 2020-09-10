@@ -11,11 +11,12 @@
 }
 
 .random-planet .list-group {
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 0.25rem;
 }
 
 .random-planet .list-group-item {
   padding: .25rem;
+  background-color: #282828;
 }
 
 .random-planet .list-group-item .term {
