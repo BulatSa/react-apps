@@ -29,7 +29,8 @@
 .loadingio-spinner-disk-ywi4ucoru1 {
   width: 74px;
   height: 74px;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   overflow: hidden;
   background: none;
 }
