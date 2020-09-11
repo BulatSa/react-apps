@@ -40,13 +40,13 @@ export default class SwapiService {
     return this._transformStarship(starship);
   }
 
-  extractId(item) {
+  _extractId(item) {
     const idRegExp = /\/([0-9]*)\/$/;
     return item.url.match(idRegExp)[1];
   }
 
-  _transformPlanet(planet) {
-    const id = this.extractId(planet);
+  _transformPlanet = (planet) => {
+    const id = this._extractId(planet);
     return {
       id,
       name: planet.name,
@@ -56,8 +56,8 @@ export default class SwapiService {
     };
   }
 
-  _transformPerson(person) {
-    const id = this.extractId(person);
+  _transformPerson = (person) => {
+    const id = this._extractId(person);
     return {
       id,
       name: person.name,
@@ -67,8 +67,8 @@ export default class SwapiService {
     };
   }
 
-  _transformStarship(starship) {
-    const id = this.extractId(starship);
+  _transformStarship = (starship) => {
+    const id = this._extractId(starship);
     return {
       id,
       name: starship.name,
