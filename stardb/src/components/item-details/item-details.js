@@ -54,7 +54,7 @@ export default class ItemDetails extends Component {
     }
 
     const { loading, image, item } = this.state;
-    const { id, name, gender, birthYear, eyeColor } = item;
+    const { name } = item;
 
     if (loading) {
       return <Spinner />;

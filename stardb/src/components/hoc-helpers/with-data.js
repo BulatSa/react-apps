@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
@@ -23,6 +23,7 @@ const withData = (View, getData) => {
       if (!data) {
         return <Spinner />;
       }
+
       return <View {...this.props} data={data} />;
     }
   };
