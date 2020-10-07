@@ -1,6 +1,8 @@
 .random-planet {
   display: flex;
   padding: 1rem;
+  border: 1px solid #444;
+  margin-bottom: 1rem;
 }
 
 .random-planet .planet-image {
@@ -11,12 +13,11 @@
 }
 
 .random-planet .list-group {
-  margin: 1rem 0 0 0.25rem;
+  margin: 1rem 0 0 1rem;
 }
 
 .random-planet .list-group-item {
   padding: .25rem;
-  background-color: #282828;
 }
 
 .random-planet .list-group-item .term {
