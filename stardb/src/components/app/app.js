@@ -7,7 +7,7 @@ import SwapiService from "../../services/swapi-service";
 import DummySwapiService from "../../services/dummy-swapi-service";
 
 import { PeoplePage, PlanetsPage, StarshipsPage } from "../pages";
-import StarshipsDetails from '../sw-components/starship-details';
+import StarshipsDetails from "../sw-components/starship-details";
 import { SwapiServiceProvider } from "../swapi-service-context";
 
 import "./app.css";
@@ -39,15 +39,15 @@ export default class App extends Component {
               <RandomPlanet />
 
               <Route path="/" exact render={() => <h2>Welcome to StarDB</h2>} />
-              <Route path="/people" component={PeoplePage} />
-              <Route path="/planets" component={PlanetsPage} />
-              <Route path="/starships" exact component={StarshipsPage} />
-              <Route path="/starships/:id" 
-                render={({match, location, history}) => {
-                  const {id} = match.params;
-                  console.log(match)
-                  return <StarshipsDetails itemId={id}/>
-                }} 
+              <Route path="/people/:id?" component={PeoplePage} />
+              <Route path="/planets/" component={PlanetsPage} />
+              <Route path="/starships/" exact component={StarshipsPage} />
+              <Route
+                path="/starships/:id"
+                render={({ match }) => {
+                  const { id } = match.params;
+                  return <StarshipsDetails itemId={id} />;
+                }}
               />
             </div>
           </Router>
