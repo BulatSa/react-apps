@@ -1,4 +1,10 @@
+@import '../scss-helpers/mixins.scss';
+
 .day-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -10px;
+  @include res(m) {
+    margin: 0 -8px;
+  }
 }

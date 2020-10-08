@@ -1,10 +1,13 @@
 import React from "react";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import "./header.scss";
 
-const Header = () => {
+const Header = ({title}) => {
   return (
     <div className="header">
-      <h1>Natural Voice</h1>
+      
+        <Link to="/"><h1>{title}</h1></Link>
+      
     </div>
   );
 };

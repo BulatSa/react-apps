@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+@mixin res($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}

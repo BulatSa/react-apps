@@ -8,7 +8,7 @@ export default class DayList extends Component {
     return (
       <Router>
         <div className="day-list">
-          <Route to='/day/:id' component={DayListItem} />
+          <Route to='/days/' component={DayListItem} />
         </div>
       </Router>
     );
