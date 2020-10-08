@@ -1,35 +1,60 @@
+@import "./components/scss-helpers/variables.scss";
+
 body {
   margin: 0;
-  font-family: PF Regal,PF Regal Text Pro, Georgia,serif;
+  font-family: $font;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: #000;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-*, *:after, *:before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, div, span {
-	max-height: 5000em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+div,
+span {
+  max-height: 5000em;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
-	position: relative;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+  position: relative;
 }
 
 img {
-	border: none;
+  border: none;
 }
 
 input:-webkit-autofill,
@@ -41,11 +66,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-	-webkit-box-shadow: 0 0 0 1000px #FFF inset;
+  box-shadow: 0 0 0 1000px #fff inset;
 }
 
 a {
-	text-decoration: none;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }

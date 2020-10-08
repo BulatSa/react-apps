@@ -1,14 +1,29 @@
 $breakpoints: (
-	'xxl': (max-width: 1400px),
-	'xl': (max-width: 1280px),
-	'l': (max-width: 1024px),
-	'm': (max-width: 959px),
-	's': (max-width: 680px),
-	'xs': (max-width: 480px),
-	'xxs': (max-width: 375px),
+  "xxl": (
+    max-width: 1400px,
+  ),
+  "xl": (
+    max-width: 1280px,
+  ),
+  "l": (
+    max-width: 1024px,
+  ),
+  "m": (
+    max-width: 959px,
+  ),
+  "s": (
+    max-width: 680px,
+  ),
+  "xs": (
+    max-width: 480px,
+  ),
+  "xxs": (
+    max-width: 375px,
+  ),
 );
 
-$font: 'Circe', 'Helvetica Neue', Arial, sans-serif;
+$font: "PF Regal", PF Regal Text Pro, Georgia, serif;
+$font-header: "Proxima Nova", Arial, Helvetica Neue, sans-serif;
 
 $container_width: 1000px;
 
