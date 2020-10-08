@@ -6,11 +6,9 @@ import "./day-list.scss";
 export default class DayList extends Component {
   render() {
     return (
-      <Router>
         <div className="day-list">
-          <Route to='/days/' component={DayListItem} />
+          <DayListItem />
         </div>
-      </Router>
     );
   }
 }

@@ -11,7 +11,7 @@ const App = () => {
       <Router>
         <Header title={"Natural Voice"} />
         <Route path="/" exact component={DayList} />
-        <Route path="/day/:id" component={Day} />
+        <Route path="/day:id" component={Day} />
       </Router>
     </div>
   );
