@@ -1,5 +1,10 @@
+@import '../scss-helpers/mixins.scss';
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+  @include res(m) {
+    padding: 0 15px;
+  }
 }

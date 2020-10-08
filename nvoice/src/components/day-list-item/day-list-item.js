@@ -7,10 +7,10 @@ import {
 } from "react-router-dom";
 import "./day-list-item.scss";
 
-const DayListItem = () => {
+const DayListItem = ({itemId}) => {
   return (
-    <Link to={'day-1'} className="day-list-item">
-      <span className="day-list-item__count">1</span>
+    <Link to={`day-${itemId}`} className="day-list-item">
+      <span className="day-list-item__count">{itemId}</span>
       <span className="day-list-item__name">День</span>
     </Link>
   );
