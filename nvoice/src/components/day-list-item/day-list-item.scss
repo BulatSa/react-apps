@@ -16,6 +16,11 @@
     width: calc(100% / 3 - 16px);
     margin: 0 8px;
   }
+  &--complete {
+    .day-list-item__count {
+      background: #00B73E;
+    }
+  }
 }
 
 .day-list-item__count {
